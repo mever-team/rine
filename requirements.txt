@@ -1,0 +1,6 @@
+git+https://github.com/openai/CLIP.git
+pandas
+pyarrow
+matplotlib
+scikit-learn
+opencv-python
