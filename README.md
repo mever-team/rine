@@ -1,17 +1,19 @@
-# Leveraging Representations from Intermediate Encoder-blocks for Synthetic Image Detection
-<!-- [paper-link] -->
+# Paper
+This repository contains the implementation code for the paper:
+
+**Leveraging Representations from Intermediate Encoder-blocks for Synthetic Image Detection** (available at [arXiv:2402.19091](https://arxiv.org/abs/2402.19091))
 
 **[<u>Christos Koutlis</u>](https://orcid.org/0000-0003-3682-408X), [<u>Symeon Papadopoulos</u>](https://orcid.org/0000-0002-5441-7341)**
 
 ![](https://github.com/mever-team/rine/blob/main/results/figs/fig1.png)
 ***Figure 1**. The RINE architecture. A batch of $`b`$ images is processed by CLIP's image encoder. The concatenation of the $`n`$ $`d`$-dimensional CLS tokens (one from each intermediate stage, i.e., Transformer block) is first projected and then multiplied with the trainable importance scores of the intermediate stages, estimated by the Trainable Importance Estimator (TIE) module. Summation across the second dimension results in one feature vector per image. Finally, after the second projection and the consequent classification head modules, two loss functions are computed. The binary cross-entropy $`\mathfrak{L}_{CE}`$ directly optimizes the real vs. fake objective, while the contrastive loss $`\mathfrak{L}_{Cont.}`$ assists the training by forming a dense feature vector cluster per class.*
 
-<!-- # News -->
+# News
 <!-- :tada: **?/?/?** Paper acceptance at ? -->
 
-<!-- :sparkles: **?/2/2024** Paper release [arXiv] -->
+:sparkles: **29/2/2024** Pre-print release --> [arXiv:2402.19091](https://arxiv.org/abs/2402.19091)
 
-<!-- :boom: **< date >** Code and checkpoints release -->
+:boom: **29/2/2024** Code and checkpoints release
 
 # Setup
 Clone the repository:
