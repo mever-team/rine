@@ -95,7 +95,12 @@ subprocess.run("python scripts/results.py", shell=True)
 In `demo/`, we also provide code for inference on one real and one fake image from the DALL-E generative model. To demonstrate run `python demo/demo.py`.
 
 # Citation
-TBU
+@article{koutlis2024leveraging,
+  title={Leveraging Representations from Intermediate Encoder-blocks for Synthetic Image Detection},
+  author={Koutlis, Christos and Papadopoulos, Symeon},
+  journal={arXiv preprint arXiv:2402.19091},
+  year={2024}
+}
 
 # Contact
 Christos Koutlis (ckoutlis@iti.gr)
