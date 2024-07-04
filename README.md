@@ -1,15 +1,15 @@
 # Paper
-This repository contains the implementation code for the paper:
+This repository contains the implementation code for the [ECCV 2024](https://eccv2024.ecva.net/) accepted paper:
 
 **Leveraging Representations from Intermediate Encoder-blocks for Synthetic Image Detection** (available at [arXiv:2402.19091](https://arxiv.org/abs/2402.19091))
 
 **[<u>Christos Koutlis</u>](https://orcid.org/0000-0003-3682-408X), [<u>Symeon Papadopoulos</u>](https://orcid.org/0000-0002-5441-7341)**
 
 ![](https://github.com/mever-team/rine/blob/main/results/figs/fig1.png)
-***Figure 1**. The RINE architecture. A batch of $`b`$ images is processed by CLIP's image encoder. The concatenation of the $`n`$ $`d`$-dimensional CLS tokens (one from each intermediate stage, i.e., Transformer block) is first projected and then multiplied with the trainable importance scores of the intermediate stages, estimated by the Trainable Importance Estimator (TIE) module. Summation across the second dimension results in one feature vector per image. Finally, after the second projection and the consequent classification head modules, two loss functions are computed. The binary cross-entropy $`\mathfrak{L}_{CE}`$ directly optimizes the real vs. fake objective, while the contrastive loss $`\mathfrak{L}_{Cont.}`$ assists the training by forming a dense feature vector cluster per class.*
+***Figure 1**. The RINE architecture. A batch of $`b`$ images is processed by CLIP's image encoder. The concatenation of the $`n`$ $`d`$-dimensional CLS tokens (one from each Transformer block) is first projected and then multiplied with the blocks' scores, estimated by the Trainable Importance Estimator (TIE) module. Summation across the second dimension results in one feature vector per image. Finally, after the second projection and the consequent classification head modules, two loss functions are computed. Binary cross-entropy $`\mathfrak{L}_{CE}`$ directly optimizes SID, while the contrastive loss $`\mathfrak{L}_{Cont.}`$ assists the training by forming a dense feature vector cluster per class.*
 
 # News
-<!-- :tada: **?/?/?** Paper acceptance at ? -->
+:tada: **4/7/2024** Paper acceptance at [ECCV 2024](https://eccv2024.ecva.net/)
 
 :sparkles: **29/2/2024** Pre-print release --> [arXiv:2402.19091](https://arxiv.org/abs/2402.19091)
 
