@@ -96,11 +96,22 @@ In `demo/`, we also provide code for inference on one real and one fake image fr
 
 # Citation
 ```
-@article{koutlis2024leveraging,
-  title={Leveraging Representations from Intermediate Encoder-blocks for Synthetic Image Detection},
-  author={Koutlis, Christos and Papadopoulos, Symeon},
-  journal={arXiv preprint arXiv:2402.19091},
-  year={2024}
+@InProceedings{10.1007/978-3-031-73220-1_23,
+author="Koutlis, Christos
+and Papadopoulos, Symeon",
+editor="Leonardis, Ale{\v{s}}
+and Ricci, Elisa
+and Roth, Stefan
+and Russakovsky, Olga
+and Sattler, Torsten
+and Varol, G{\"u}l",
+title="Leveraging Representations from Intermediate Encoder-Blocks for Synthetic Image Detection",
+booktitle="Computer Vision -- ECCV 2024",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="394--411",
+isbn="978-3-031-73220-1"
 }
 ```
 
